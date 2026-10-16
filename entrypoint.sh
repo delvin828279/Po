@@ -10,4 +10,4 @@ echo "   Listening: wss://man:man@0.0.0.0:${PORT}   "
 echo "   Upstream: 107 Rotating PrivateVPN Proxies "
 echo "============================================="
 
-exec gost -L="wss://man:man@:${PORT}" -F="${FIRST_PEER}?peer=/app/peers.txt&strategy=random"
+exec gost -L="ws://man:man@:${PORT}" -F="${FIRST_PEER}?peer=/app/peers.txt&strategy=random"
